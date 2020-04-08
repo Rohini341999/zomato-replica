@@ -1,3 +1,259 @@
 @use './reset.scss';
 
-/* Add your css here */
+@use './css/reset.scss';
+
+@use './css/style.css';
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+    font-family: sans-serif;
+}
+//header part
+// $primary-height:3rem;
+// $secondary-height:6rem;
+// @media screen and (max-width:284px){
+// .h-container{
+//     display: flex;
+//     flex-direction: row;
+//     align-items: left;
+//     padding: 1rem;
+//     background: #222;
+//     padding: 5px 20px;
+
+//     .get-link{
+//         display: flex;
+//         float: left;
+//         justify-content: space-evenly;
+//         width:50%;
+//         flex-shrink: $primary-height;
+//     }
+//     a{
+//         text-decoration: none;
+//         color: #000;
+//     }
+//     .h-container li {
+//         font-size: 16px;
+//         padding: 15px 5px;
+//         float: left;
+//         white-space: nowrap;
+//         list-style: none;
+//         width:50%;
+//     }
+//     .primary-height{
+//         height: $primary-height;
+//     }
+// }
+// }
+@media screen and (max-width:312px){
+    .banner{
+        background-image: url(/images/bg.jpg);
+        height:350px;
+        max-width:auto;
+        padding:35px 10px 30px 10px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .search-restaurant{
+        display: flex;
+        flex-direction: column;
+    }
+    .search-restaurant img{
+        width:60px;
+        height:60px;
+        margin: 25px 100px 25px 100px;
+    }
+    .search-restaurant p{
+        float: center;
+        text-align: center;
+        padding: 0px 0px 10px 0px;
+        color: black;
+        font-size: 15px;
+    }
+    .bgimage{
+        display: inline-block;
+        flex-grow: 1;
+        font-size: 11px;
+        width: 100%;
+        justify-content: center;
+        padding-top: 5px;
+    }
+    .bgimage .login{
+        text-decoration: none;
+        color: black;
+        padding:0px 20px 0px 20px;
+    }
+    .bgimage .createacc{
+        text-decoration: none;
+        color:black;
+        border: 2px solid #fb2e2ef1;
+        padding: 5px 30px 5px 30px;
+    }
+    #hotels{
+        height: 30px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    #search-rest{
+        margin-bottom: 10px;
+        height: 30px;
+        border-radius: 10px;
+    }
+    #search-btn{
+        height: 30px;
+        border-radius: 10px;
+        background-color:  #fb2e2ef1;
+        color: white;
+    }
+    .widget{
+        width: 100%;
+        text-align: center;
+        font-weight: 400;
+        margin:20px 0px 20px 0px;
+        justify-content: center;
+    }
+    .search-del{
+        margin: 20px 0px 20px 0px;
+        display: inline-block;
+        border-radius: 10px;
+        flex-basis: 70%;
+        height:40px;
+        color: grey;
+        padding: 5px 5px 5px 5px;
+    }
+    .detect-btn{
+        flex-basis:30%;
+        height:40px;
+        padding:5px 5px 5px 0px;
+        border-radius: 10px;
+        font-size:14px;
+        font-weight:bolder;
+    }
+    .order-btn{
+        padding: 5px 0px 5px 0px;
+        background-color: green;
+        height:40px;
+        color: white;
+        border-radius: 10px;
+        width: 240px;
+        font-size:14px;
+        font-weight:bolder;
+    }
+    .widget p{
+        margin:10px 5px 10px 5px ;
+        color: green;
+        font-size:14px;
+        font-weight: bolder;
+    }
+    
+    .Collections {
+        position: relative;
+        font-family: Arial;
+        max-width:310px;
+      }
+    .Collections img{
+          float:left;
+          max-width:150px;
+          height:120px;
+          padding-top: 5px;
+      }
+      
+      .text-block {
+        font-size: 16px;
+        font-weight: 400;
+        height:120px;
+        width:165px;
+        float:right;
+        right: 5px;
+        color: black;
+        margin-left: 5px;
+      }
+    .text-block h5{
+        margin-bottom: 10px;
+        font-size:18px;
+    }
+    .Collections #link{
+        color:red;
+        text-align: center;
+        padding:30px 0px 20px 0px;
+    }
+.category-list{
+    display:flex;
+    flex-wrap: wrap;
+}
+#cat-title{
+    margin-left: 10px;
+}
+#cat-subtitle{
+    margin-left: 10px;
+}
+.category-list img{
+    align-content: center;
+    justify-content: space-between;
+    width:50px;
+    height:50px;
+    text-decoration: none;
+    margin:10px 10px 20px 10px;    
+}  
+.category-list li{list-style-type: none;}
+.localities{
+    max-width:300px;
+    margin:15px 0px 5px 0px;
+    padding:0px 0px 20px 0px;
+    background-color: lightgrey;
+}
+.locality-list{
+    margin: 20px 0px 5px 5px;
+    padding: 20px 0px 10px 5px;
+    list-style-type: none;
+    line-height: 25px;
+}
+#loc-title{
+    padding-left: 10px;
+}
+#loc-subtitle{
+    padding-top:5px;
+    padding-left: 10px;
+}
+footer{
+    background-color: rgba(27, 28, 34, 0.924);
+}
+.footer-wrapper{
+    position: relative;
+    font-family: Arial;
+    max-width:310px;
+    color:white;
+    display: inline-block;
+}
+footer img{
+    width:60px;
+    height:60px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    
+}
+footer #Cities{
+    width:170px;
+    height:35px;
+    background-color: black;
+    color: white;
+    font-size: 13px;   
+    float:right;
+    margin:25px 10px 20px 5px ;
+}
+.footer-wrapper .AboutZomato .Foodies{
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+.footer-wrapper li{
+    list-style-type: none;
+}
+.footer-wrapper p{
+    font-size: 11px;
+    line-height: 1.6;
+    
+}
+}
+
+
