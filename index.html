@@ -1,4 +1,3 @@
-<!-- In this file you are going to write html code -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,27 +6,25 @@
     <link rel="stylesheet" href="./css/style.scss">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.scss">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Restaurants - Mumbai Restaurants, Restaurants in Mumbai | Zomato India</title>
 </head>
 <body>
             <!-- Navbar part -->
-    <header class="h-container">
-        <div>
-            <!-- <i class="material-icons" style="color:black ; background-color: red;">stay_current_portrait</i> -->
-            <a href="#" id="get-link">Get the app</a>
-            <li>
-                <a href="#" id="nav_item_1" >Order Food</a>
-            </li>
-            <li>
-                <a href="#" id="nav_item_2">Book a Table</a>
-            </li>
-            <li>
-                <a href="#" id="nav_item_3">Zomato Gold</a>
-            </li>
-            
-        </div>
-    </header>
+            <header class="h-container">
+                <!-- app link -->
+                <div class="get-link">
+                    <li></li><img class="primary-height"src="/images/get-the-app-plain.svg" alt="get the app logo"><a href="#">Get the app</a></li>
+                </div>
+                
+                <!-- list items-->
+                <div class="links">
+                    <li class="nav_items"><img class="primary-height" src="/images/order-online.svg" alt=""><a href="#" id="nav_item_1">Order Food</a></li>
+                    <li class="nav_items"><img class="primary-height" src="/images/book-a-table.svg" alt=""><a href="#" id="nav_item_2">Book a Table</a></li>
+                    <li class="nav_items"><img class="primary-height" src="/images/gold.svg" alt=""><a href="#" id="nav_item_3">Zomato Gold</a></li>
+                </div>
+               
+            </header>
     
             <!-- Search -->
     <section class="banner">
@@ -48,7 +45,10 @@
             <button id="search-btn">Search</button>
         </div>
     </section>
+    <img class="ad-zomaland" src="/images/ad-zomaland.jpeg">
     <div class="widget">
+        <h2>Order Food Online</h2>
+        <p>Best restaurants delivering to your doorstep</p>
         <h4>Enter your delivery location</h4>
         <input type="text" class="search-del" placeholder="Type delivery location here">
         <button class="detect-btn">Detect</button>
@@ -88,10 +88,10 @@
             <p>Turn up the flavour by ordering SureCrisp fries</p>
         </div>
     </div>
-    <p id="link">
-        All collections in Mumbai
-    </p>
         </div>
+        <p id="link">
+            All collections in Mumbai
+        </p>
     </COMPONENT>
     <section class="categories">
         <h2 id="cat-title">Quick Searches</h2>
@@ -99,27 +99,38 @@
         <ul class="category-list">
             <li>
                 <img src="/images/delivery.png" alt="Delivery">
+                <p>Delivery</p>
             </li>
+            
             <li>
                 <img src="/images/pocket-friendly-delivery.png" alt="Pocket-Friendly-Delivery">
+                <p>Pocket-Friendly-Delivery</p>
             </li>
+            
             <li>
-                <img src="/images/breakfast.png" alt="Breakfast">
+                <img src="/images/breakfast.png" alt="Breakfast"> 
+                <p>Breakfast</p>              
             </li>
+            
             <li>
                 <img src="/images/lunch.png" alt="Lunch">
+                <p>Lunch</p>
             </li>
             <li>
                 <img src="/images/dinner.png" alt="Dinner">
+                <p>Dinner</p>
             </li>
             <li>
                 <img src="/images/drinks.png" alt="Drinks &Nightlife">
+                <p>Drinks & Nightlife</p>
             </li>
             <li>
                 <img src="/images/cafes.png" alt="Cafes">
+                <p>Cafes</p>
             </li>
             <li>
                 <img src="/images/desserts.png" alt="Desserts and Bakes">
+                <p>Desserts and Bakes</p>
             </li>
         </ul>
     </section>
@@ -227,24 +238,96 @@
                 <option value="thane">Thane</option>
                 <option value="kalyan">Kalyan</option>
               </select>
+              <hr/>
         <div class="footer-wrapper">
+            <div class="box-2">
             <li class="AboutZomato">About Zomato</li>
-            <li>About Us</li>
-            <li>Culture</li>
-            <li>Blog</li>
-            <li>Careers</li>
-            <li>Contact</li>
+
+                <p>About Us</p>
+                <p>Culture</p>
+                <p>Blog</p>
+                <p>Careers</p>
+                <p>Contact</p>
+            </div>
+            <div class="box-2">
             <li class="Foodies">For Foodies</li>
-            <li>Code of Conduct</li>
-            <li>Community</li>
-            <li>Verified Users</li>
-            <li>Blogger Help</li>
-            <li>Developers</li>
-            <li>Mobile Apps</li>
-            <li>For Restaurants</li>
-            <p></p>
-            <li>Countries</li>
+
+            <ul id="foodies_list">
+                <li id="foodies_item_1"><a href="#">Code of Conduct</a></li>
+                <li id="foodies_item_2"><a href="#">Community</a></li>
+                <li id="foodies_item_3"><a href="#">Verified Users</a></li>
+                <li id="foodies_item_4"><a href="#">Blogger Help</a></li>
+                <li id="foodies_item_5"><a href="#">Developers</a></li>
+                <li id="foodies_item_5"><a href="#">Mobile Apps</a></li>
+            </ul>
+            </div>
+            <div class="box-2">
+            <li class="forrestaurant">For Restaurant</li>
+            <ul id="forrestaurant_list">
+                <li id="forrestaurant_item_1"><a href="#">Add a restaurant</a></li>
+                <li id="forrestaurant_item_2"><a href="#">Claim your Listing</a></li>
+                <li id="forrestaurant_item_3"><a href="#">Business App</a></li>
+                <li id="forrestaurant_item_1"><a href="#">Business Owner Guidelines</a></li>
+                <li id="forrestaurant_item_2"><a href="#">Business Blog</a></li>
+                <li id="forrestaurant_item_3"><a href="#">Restaurant Widgets</a></li>
+                <li id="forrestaurant_item_1"><a href="#">Products for Businesses</a></li>
+                <li id="forrestaurant_item_2"><a href="#">Advertise</a></li>
+                <li id="forrestaurant_item_3"><a href="#">Order</a></li>
+                <li id="forrestaurant_item_1"><a href="#">Book</a></li>
+                <li id="forrestaurant_item_2"><a href="#">Trace</a></li>
+                <li id="forrestaurant_item_3"><a href="#">Hyperpure</a></li>
+            </ul>
+            </div>
+<hr/>
+            <!-- <div class="box-2"> -->
+            <li class="countries">Countries</li>
+
+                <p>Australia</p>
+                <p>Brasil</p>
+                <p>Canada</p>
+                <p>Chile</p>
+                <p>Czech Republic</p>
+
+                <p>Australia</p>
+                <p>Brasil</p>
+                <p>Canada</p>
+                <p>Chile</p>
+                <p>Czech Republic</p>
+
+                <p>Australia</p>
+                <p>Brasil</p>
+                <p>Canada</p>
+                <p>Chile</p>
+                <p>Czech Republic</p>
+
+                <p>Australia</p>
+                <p>Brasil</p>
+                <p>Canada</p>
+                <p>Chile</p>
+                <p>Czech Republic</p>
+
+                <p>Australia</p>
+                <p>Brasil</p>
+                <p>Canada</p>
+                <p>Chile</p>
+                <p>Czech Republic</p>
+            <!-- </div> -->
         </div>
-    </footer>
+        <hr/>
+        <div class="rights">
+            <p>Privacy</p>
+            <p>Terms</p>
+            <p>API Policy</p>
+            <p>CSR</p>
+            <p>Security</p>
+            <p>Sitemap</p>
+            <i class="fab fa-facebook" style="color:white;"></i>
+            <i class="fab fa-instagram" style="color:white;"></i>
+            <i class="fab fa-twitter" style="color:white;"></i>
+
+    </div>
+    <hr/>
+    <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies.All trademarks are properties of their respecive owners.© 2008-2019 - Zomato Media Pvt Ltd. All rights reserved.  </p>
+</footer>
 </body>
 </html>
