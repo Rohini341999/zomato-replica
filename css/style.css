@@ -1,0 +1,650 @@
+@use './css/reset.scss';
+@use './css/style.css';
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 312px) {
+  .h-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem;
+    background: #fff;
+  }
+  .h-container .get-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .h-container .nav_items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .h-container a {
+    text-decoration: none;
+    color: #000;
+  }
+  .h-container li {
+    list-style: none;
+  }
+  .h-container .primary-height {
+    height: 32px;
+  }
+  .banner {
+    background: url("../images/bg.jpg") no-repeat center center/cover;
+    color: #f1f1f1;
+    height: 350px;
+    max-width: auto;
+    padding: 35px 10px 30px 10px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .search-restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .search-restaurant img {
+    width: 60px;
+    height: 60px;
+    margin: 25px 100px 25px 100px;
+  }
+  .search-restaurant p {
+    float: center;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+    color: black;
+    font-size: 15px;
+  }
+  .bgimage {
+    display: inline-block;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font-size: 11px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 5px;
+  }
+  .bgimage .login {
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px 0px 30px;
+  }
+  .bgimage .createacc {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 30px 5px 30px;
+  }
+  #hotels {
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  #search-rest {
+    margin-bottom: 10px;
+    height: 30px;
+    border-radius: 10px;
+  }
+  #search-btn {
+    height: 30px;
+    border-radius: 10px;
+    background-color: #cb202d;
+    color: white;
+  }
+  .widget {
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    margin: 20px 0px 20px 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .search-del {
+    margin: 20px 0px 20px 0px;
+    display: inline-block;
+    border-radius: 10px;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    height: 40px;
+    color: grey;
+    padding: 5px 5px 5px 5px;
+  }
+  .detect-btn {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    height: 40px;
+    padding: 5px 5px 5px 0px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+  .order-btn {
+    padding: 5px 0px 5px 0px;
+    background-color: #069e44;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    width: 240px;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+  .widget p {
+    margin: 10px 5px 10px 5px;
+    color: #069e44;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+  .Collections {
+    position: relative;
+    font-family: Arial;
+    max-width: 310px;
+  }
+  .Collections img {
+    float: left;
+    max-width: 150px;
+    height: 120px;
+    padding-top: 5px;
+  }
+  .text-block {
+    font-size: 16px;
+    font-weight: 400;
+    height: 120px;
+    width: 165px;
+    float: right;
+    right: 5px;
+    color: black;
+    margin-left: 5px;
+  }
+  .text-block h5 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .Collections #link {
+    color: red;
+    text-align: center;
+    padding: 30px 0px 20px 0px;
+  }
+  .category-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #cat-title {
+    margin-left: 10px;
+  }
+  #cat-subtitle {
+    margin-left: 10px;
+  }
+  .category-list img {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    margin: 10px 10px 20px 10px;
+  }
+  .category-list li {
+    list-style-type: none;
+  }
+  .localities {
+    max-width: 300px;
+    margin: 15px 0px 5px 0px;
+    padding: 0px 0px 20px 0px;
+    background-color: lightgrey;
+  }
+  .locality-list {
+    margin: 20px 0px 5px 5px;
+    padding: 20px 0px 10px 5px;
+    list-style-type: none;
+    line-height: 25px;
+  }
+  #loc-title {
+    padding-left: 10px;
+  }
+  #loc-subtitle {
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+  footer {
+    background-color: #282b34;
+    display: inline-block;
+    width: 310px;
+    padding: 10px 10px 10px 10px;
+  }
+  .footer-wrapper {
+    position: relative;
+    font-family: Arial;
+    max-width: 310px;
+    color: white;
+  }
+  footer img {
+    width: 60px;
+    height: 60px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+  }
+  hr {
+    color: grey;
+    opacity: 0.6;
+    height: 1px;
+    margin: 15px 4px 15px 4px;
+  }
+  footer #Cities {
+    width: 170px;
+    height: 35px;
+    background-color: #1c1e24;
+    color: white;
+    font-size: 13px;
+    float: right;
+    margin: 25px 10px 20px 5px;
+  }
+  .footer-wrapper .AboutZomato, .Foodies, .forrestaurant, .countries {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+  .footer-wrapper li {
+    list-style-type: none;
+    float: left;
+  }
+  footer p {
+    font-size: 11px;
+    line-height: 1.6;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 312px) {
+  .h-container {
+    width: 100%;
+    padding: 16px;
+    background: #fff;
+  }
+  .h-container .get-link {
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  .h-container .nav_items {
+    text-align: right;
+  }
+  .h-container a {
+    text-decoration: none;
+    color: #000;
+  }
+  .h-container li {
+    list-style: none;
+  }
+  .h-container .primary-height {
+    height: 32px;
+  }
+  .banner {
+    background: url("/images/bg.jpg") no-repeat center center/cover;
+    -webkit-filter: brightness(60%);
+            filter: brightness(60%);
+    color: #ffffff;
+    height: 450px;
+    width: 100%;
+    padding: 35px 10px 30px 10px;
+    text-align: center;
+    font-weight: 400;
+  }
+  .search-restaurant {
+    display: inline-block;
+  }
+  .search-restaurant img {
+    width: 100px;
+    height: 100px;
+    margin: 25px 100px 25px 100px;
+  }
+  .search-restaurant p {
+    float: center;
+    text-align: center;
+    padding: 0px 0px 50px 0px;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .bgimage {
+    display: inline-block;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font-size: 18px;
+    width: 100%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding-top: 5px;
+  }
+  .bgimage .login {
+    text-decoration: none;
+    color: white;
+    padding: 0px 50px 0px 50px;
+    justify-items: right;
+    margin-left: 800px;
+  }
+  .bgimage .createacc {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 30px 5px 30px;
+    -ms-flex-item-align: right;
+        -ms-grid-row-align: right;
+        align-self: right;
+  }
+  #hotels {
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+  #search-rest {
+    margin-bottom: 10px;
+    height: 40px;
+    border-radius: 10px;
+    width: 700px;
+  }
+  #search-btn {
+    width: 110px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #cb202d;
+    color: white;
+  }
+  .ad-zomaland {
+    margin: 70px 10px 30px 30px;
+    display: inline-block;
+    width: 55%;
+  }
+  .widget {
+    margin: 70px 10px 30px 10px;
+    width: 40%;
+    float: right;
+    text-align: left;
+    font-weight: 400;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #search-del {
+    margin: 20px 0px 20px 10px;
+    display: inline-block;
+    border-radius: 10px;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    height: 40px;
+    width: 320px;
+    color: grey;
+    padding: 5px 5px 5px 5px;
+  }
+  .detect-btn {
+    height: 40px;
+    padding: 5px 8px 5px 8px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+  .order-btn {
+    padding: 5px 0px 5px 0px;
+    background-color: #069e44;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    width: 390px;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-left: 10px;
+  }
+  .widget p {
+    margin: 10px 5px 10px 5px;
+    color: #069e44;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+  .Collections {
+    position: relative;
+    width: 80%;
+    float: justify;
+  }
+  .Collections img {
+    float: left;
+    width: 20%;
+    height: 20%;
+    padding-top: 5px;
+    display: -ms-grid;
+    display: grid;
+  }
+  .text-block {
+    display: -ms-grid;
+    display: grid;
+    font-size: 20px;
+    font-weight: 400;
+    height: 20%;
+    width: 20%;
+    float: left;
+    color: black;
+    margin: 0px 0px 10px 15px;
+    line-height: 35px;
+  }
+  .text-block h5 {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  #link {
+    float: bottom;
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    padding: 30px 0px 20px 0px;
+    margin: 380px 400px 0px 0px;
+  }
+  .category-list li {
+    list-style-type: none;
+    display: inline-block;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 10%;
+    margin: 0px 0px 0px 20px;
+  }
+  .category-list img {
+    -ms-flex-line-pack: left;
+        align-content: left;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    margin: 10px 0px 0px 0px;
+  }
+  #cat-title {
+    margin-left: 10px;
+    font-weight: 500;
+  }
+  #cat-subtitle {
+    margin-left: 10px;
+  }
+  .localities {
+    width: 100%;
+    margin: 15px 0px 5px 0px;
+    padding: 0px 0px 20px 0px;
+    background-color: lightgrey;
+    height: 830px;
+  }
+  .locality-list {
+    list-style-type: none;
+    line-height: 1.6;
+    float: left;
+  }
+  #loc-title {
+    padding-left: 10px;
+  }
+  #loc-subtitle {
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+  footer {
+    background-color: #282b34;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+  }
+  .footer-wrapper {
+    position: relative;
+    width: 100%;
+    color: white;
+  }
+  footer img {
+    width: 120px;
+    height: 120px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+  }
+  hr {
+    color: grey;
+    opacity: 0.6;
+    height: 1px;
+    margin: 15px 4px 15px 4px;
+  }
+  footer #Cities {
+    width: 170px;
+    height: 35px;
+    background-color: #1c1e24;
+    color: white;
+    font-size: 13px;
+    float: right;
+    margin: 25px 10px 20px 5px;
+  }
+  footer p {
+    font-size: 11px;
+    line-height: 1.6;
+    color: white;
+  }
+  .box-2 {
+    float: left;
+    width: 100%;
+    text-align: left;
+    list-style-type: none;
+    color: #fff;
+    text-decoration: none;
+  }
+  .box-2 .AboutZomato {
+    padding-top: 10px;
+    margin: 20px;
+  }
+  .box-2 .Foodies {
+    padding-top: 10px;
+    margin: 20px;
+  }
+  .box-2 .forrestaurant {
+    padding-top: 10px;
+    margin: 20px;
+  }
+  .box-2 .countries {
+    padding-top: 10px;
+    margin: 20px;
+    list-style-type: none;
+  }
+  .box-2 #foodies_list li {
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .box-2 #foodies_list li a {
+    text-decoration: none;
+    color: white;
+  }
+  .box-2 #forrestaurant_list li {
+    list-style-type: none;
+  }
+  .box-2 #forrestaurant_list li a {
+    text-decoration: none;
+    color: white;
+  }
+  .box-2 img {
+    margin-top: 20px;
+  }
+  .box-2 #forrestaurant_list #forrestaurant_item_3 {
+    padding-bottom: 31px;
+  }
+  .box-2 #comp_list #comp_item_4 {
+    padding-bottom: 14px;
+  }
+  .box-2 #ark-para {
+    padding-bottom: 31px;
+  }
+  .clear {
+    clear: both;
+  }
+  .rights {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+  .rights p {
+    margin-right: 100px;
+  }
+  .rights i {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 50px;
+    padding-left: 50px;
+    -ms-grid-column-align: right;
+        justify-self: right;
+  }
+}
+/*# sourceMappingURL=style.css.map */
